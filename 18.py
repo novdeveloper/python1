@@ -4,11 +4,12 @@
 from pprint import pprint
 import random
 
-pprint("Задайте вопрос: ")
-domand = input()
+domand = ""
 
-
-if random.randint(0, 1) == 0:
-    print("нет")
-else:
-    print("да")
+while domand != "хватит":
+    pprint("Задайте вопрос (для выхода введите хватит): ")
+    domand = input()
+    if random.randint(0, 1) == 0:
+        print("нет")
+    else:
+        print("да")
