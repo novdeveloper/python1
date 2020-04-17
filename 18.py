@@ -6,11 +6,9 @@ import random
 
 pprint("Задайте вопрос: ")
 domand = input()
-a = []
-for i in range(1):
-    a.append(random.randint(0, 1))
 
-if a[0] == 0:
+
+if random.randint(0, 1) == 0:
     print("нет")
 else:
     print("да")
