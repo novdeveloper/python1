@@ -39,5 +39,5 @@ def __repr__(self):
             seat.key: seat,
             }
 #вывод в консоль
-    pprint(cars)
-    pprint(cars[seat.key])
+pprint(cars)
+pprint(cars[seat.key])
