@@ -3,6 +3,7 @@ from pprint import pprint
 
 #создаётся класс, под названием 'Car'
 class Car:
+    pass
 #создаём подкласс(наследование)
     class Honda(Car):
         pass
