@@ -5,17 +5,17 @@ from pprint import pprint
 class Car:
     pass
 #создаём подкласс(наследование)
-    class Honda(Car):
-        pass
+class Honda(Car):
+    pass
 #создаём подкласс(наследование)
-    class Toyota(Car):
-        pass
+class Toyota(Car):
+    pass
 #создаём подкласс(наследование)
-    class Lada(Car):
-        pass
+class Lada(Car):
+    pass
 #создаём подкласс(наследование)
-    class Seat(Car):
-        pass
+class Seat(Car):
+    pass
     
 #создаём функцию, конструктор класса, без него программа не будет работат
 def __init__(self, make, year, body):
