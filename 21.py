@@ -10,7 +10,10 @@ class Car:
     def __init__(self, make, year, body):
         self.make, self.year, self.body = make, year, body
         self.key = (make, body)
+    #создаём функцию, отвечающую за строковое представление вывода
 
+    def __repr__(self):
+        return "Car('%s', %s, '%s')" % (self.make, self.year, self.body)
 #создаём подкласс(наследование)
 
 class Honda(Car):
@@ -33,10 +36,7 @@ class Seat(Car):
     
 
 
-#создаём функцию, отвечающую за строковое представление вывода
 
-    def __repr__(self):
-        return "Car('%s', %s, '%s')" % (self.make, self.year, self.body)
 
 #основная программа, присваиваем списки к переменным    
 
