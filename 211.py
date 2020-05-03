@@ -5,7 +5,7 @@ from pprint import pprint
 #создаётся класс, под названием 'Car'
 
 class Car:
-    #создаём функцию, конструктор класса, без него программа не будет работат
+    #создаём функцию, конструктор класса, без него программа не будет работать
 
     def __init__(self, make, year, body):
         self.make, self.year, self.body = make, year, body
@@ -14,39 +14,38 @@ class Car:
 
     def __repr__(self):
         return "Car('%s', %s, '%s')" % (self.make, self.year, self.body)
-#создаём подкласс(наследование)
 
+#создаём подкласс(наследование)
 class Honda(Car):
-    #тип двигателя установленного на автомобиле
-    gasoline = "benzine"
     pass
-#создаём подкласс(наследование)
 
+#создаём подкласс(наследование)
 class Toyota(Car):
-    #тип двигателя установленного на автомобиле
-    gasoline = "Бензин"
     pass
-#создаём подкласс(наследование)
 
+#создаём подкласс(наследование)
 class Lada(Car):
     pass
 
 #создаём подкласс(наследование)
-
 class Seat(Car):
     pass
 
-
+class Engine1(Car):
+    type1 = "бензин"
+    
+class Engine2(Car):
+    type2 = "дизель"
     
 #показываем тип двигателя автомобиля, используя подкласс Honda()
-honda = Honda("хонда", 1999, "универсал")
-pprint(honda.gasoline)
+#honda = Honda("хонда", 1999, "универсал")
+#pprint(honda.gasoline)
 
 
 #показываем тип двигателя автомобиля, используя подкласс Toyota()
-toyota = Toyota("тойота", 1999, "седан")
-toyota.gasoline = "дизель"
-pprint(toyota.gasoline)
+#toyota = Toyota("тойота", 1999, "седан")
+#toyota.gasoline = "дизель"
+#pprint(toyota.gasoline)
 
 
 #основная программа, присваиваем списки к переменным    
@@ -66,6 +65,6 @@ cars = {
        }
 
 #вывод в консоль
-
+seat = Engine2("honda", 1999, "universal")
 pprint(cars)
-pprint(cars[seat.key])
+pprint(cars(seat.Engine2("honda", 1999, "universal")))
