@@ -1,20 +1,10 @@
-class Myint():
+# создать Myint ult 2+2 = 5
+
+class Myint(int):
         
-    #создаём функцию, конструктор класса, без него программа не будет работать
-
-    def __init__(self, x):
-        #прибавление двойки к иксу
-        self.x = x+2
-        self.key = (x)
-    #создаём функцию, отвечающую за строковое представление вывода
-
-    def __repr__(self):
-        return "Myint('%s')" % (self.x)
-
-
-
+    def __add__(self, x):
+        return super().__add__(x+1)
+    
+    
 a = Myint(2)
-
-#print(type(a))
-#print(a+1)
-print(a)
+print(a+2)
